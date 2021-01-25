@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<div class="modal-dialog">
+  <div class="loginmodal-container">
+    <h1>Sign Up</h1>
+    {% if invalid %}
+      <div><p style="color:red">{{message}}</p></div>
+    {% endif %}
+    {% if form_class %}
+			<form method=post>
+        {% csrf_token %}
+        {{form_class|crispy}}
+				<input type="submit" name="signup" class="btn btn-success btn-md" value="Sign Up"></input>
+			</form>
+    {% endif %}
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,6 @@
+psycopg2-binary
+django-crispy-forms
+django-bootstrap4
+django-common-helpers
+djongo
+jsonfield

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LA Hacks</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-theme.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}"/>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-theme.css' %}"/>
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'bootstrap/js/npm.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jQuery/jquery-3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jQuery/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jQuery/jquery-3.3.1.min.map' %}"></script>
+</head>
+<body>
+    <script>{% block script %}{% endblock %}</script>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
