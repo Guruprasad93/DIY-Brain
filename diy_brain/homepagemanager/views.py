@@ -38,5 +38,5 @@ class HomePageView(FormView):
         if(form.is_valid()):
             taskName = form.cleaned_data['taskName']
             taskDescription = form.cleaned_data['taskDescription']
-            createTask(userID, taskName, taskDescription)
-            return HttpResponseRedirect("/task")
+            brain_id = createTask(userID, taskName, taskDescription)
+            return HttpResponseRedirect("/task?brain_id=" + str(brain_id))

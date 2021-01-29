@@ -14,7 +14,7 @@
   <h3 align="center">Past Top-Brains</h3>
   {% if brainInfo %}
     {% for info in brainInfo %}
-      <a name="{{ info.id }}" type="submit" value="open_{{ info.id }}" href="{% url 'taskmanagerview' %}" class="btn btn-info btn-md">{{ info.name }}</a>
+      <a name="{{ info.id }}" type="submit" href="/task?brain_id={{ info.id }}" class="btn btn-info btn-md">{{ info.name }}</a>
     {% endfor %}
   {% endif %}
 {% endblock %}

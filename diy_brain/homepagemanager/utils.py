@@ -18,3 +18,4 @@ def getBrainInfo(userID):
 def createTask(userID, taskName, taskDescription):
     row = UserBrainMap(userID = userID, taskName = taskName, taskDescription = taskDescription)
     row.save()
+    return row.id
