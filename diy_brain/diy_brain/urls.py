@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^login/', include("loginmanager.urls")),
     url(r'^signup/', include("signupmanager.urls")),
     url(r'^homepage/', include("homepagemanager.urls")),
+    url(r'^task/', include("taskmanager.urls")),
 ]
 
 if settings.DEBUG:

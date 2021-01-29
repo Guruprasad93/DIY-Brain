@@ -94,9 +94,9 @@ thead th.sorted .text {
     padding-left: 42px;
 }
 
-/* dashboard styles */
+/* homepage styles */
 
-.dashboard .module table td a {
+.homepage .module table td a {
     padding-left: .6em;
     padding-right: 16px;
 }

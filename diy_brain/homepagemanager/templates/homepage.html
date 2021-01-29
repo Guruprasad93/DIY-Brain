@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+  <h3 align="center">Welcome {{name}}!</h3>
+  {% if form_class %}
+    <form method="post">
+      {% csrf_token %}
+      {{form_class|crispy}}
+      <input type="submit" name="createtask" class="btn btn-primary" value="Create Brain"></input>
+    </form>
+  {% endif %}
+  <br>
+  <h3 align="center">Past Top-Brains</h3>
+  {% if brainInfo %}
+    {% for info in brainInfo %}
+      <a name="{{ info.id }}" type="submit" value="open_{{ info.id }}" href="{% url 'taskmanagerview' %}" class="btn btn-info btn-md">{{ info.name }}</a>
+    {% endfor %}
+  {% endif %}
+{% endblock %}

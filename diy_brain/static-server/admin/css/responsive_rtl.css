@@ -54,7 +54,7 @@
         margin-right: 15px;
     }
 
-    [dir="rtl"] .dashboard .module table td a {
+    [dir="rtl"] .homepage .module table td a {
         padding-left: 0;
         padding-right: 16px;
     }

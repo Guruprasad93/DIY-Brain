@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'bootstrap4',
     'signupmanager.apps.SignupmanagerConfig',
     'loginmanager.apps.LoginmanagerConfig',
+    'homepagemanager.apps.HomepagemanagerConfig',
+    'taskmanager.apps.TaskmanagerConfig',
 ]
 
 MIDDLEWARE = [

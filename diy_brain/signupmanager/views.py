@@ -34,7 +34,7 @@ class SignUpView(FormView):
             if new_user(email_address):
                 save_details(full_name, email_address, password)
                 add_session(request, email_address)
-                return HttpResponseRedirect("/dashboard")
+                return HttpResponseRedirect("/homepage")
             else:
                 context = {
                     'signup_form_class': form_class,

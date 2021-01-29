@@ -61,9 +61,9 @@ input[type="submit"], button {
         line-height: 1.4;
     }
 
-    /* Dashboard */
+    /* Homepage */
 
-    .dashboard #content {
+    .homepage #content {
         width: auto;
     }
 
@@ -83,7 +83,7 @@ input[type="submit"], button {
         margin-left: 290px;
     }
 
-    .dashboard .module table td a {
+    .homepage .module table td a {
         padding-right: 0;
     }
 
@@ -465,7 +465,7 @@ input[type="submit"], button {
         padding: 10px 15px;
     }
 
-    /* Dashboard */
+    /* Homepage */
 
     .colMS, .colSM {
         margin: 0;
